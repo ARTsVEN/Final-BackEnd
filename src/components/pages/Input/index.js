@@ -132,7 +132,7 @@ const Input = () => {
                 }
             </div>
             <hr />
-            <table class="table table-striped table-hover">
+            <table className="table table-striped table-hover">
                 <thead>
                     <tr>
                         <th>Title</th>

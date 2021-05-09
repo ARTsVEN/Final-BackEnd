@@ -6,6 +6,7 @@ import Dashboard from '../../components/pages/Dashboard';
 import Login from '../../components/pages/Login';
 import Register from '../../components/pages/Register';
 import Input from '../../components/pages/Input';
+import Info from '../../components/pages/Info';
 
 
 
@@ -28,6 +29,9 @@ const Routes = () => {
                 </Route>
                 <Route path="/input">
                     <Input/>
+                </Route>
+                <Route path="/info">
+                    <Info />
                 </Route>
             </Switch>
         </Router>
