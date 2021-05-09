@@ -33,9 +33,10 @@ const Login = ({ title, angka }) => {
 
   return (
     //JSX
-    <div>
+    <div style={{ 
+      backgroundImage: `url("http://www.questarai.com/wp-content/uploads/2016/10/fullwidth-header-background-image-1080x720.png")`}}>
     <Header />
-    <div className="container mt-5">
+    <div  className="col-md-4 shadow p-3 card container mt-5">
        
       <h3>{welcomeText}</h3>
       <h1>
@@ -63,12 +64,13 @@ const Login = ({ title, angka }) => {
       </button>
       <br></br>
       <br></br>
-      <button type="button" onClick={onRegis} className="btn btn-warning">
+      <button type="button" onClick={onRegis} className="btn btn-warning mb-5">
         Buat Akun
       </button>
     </div>
     </div>
   );
 };
+
 
 export default Login;

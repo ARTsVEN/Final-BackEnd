@@ -44,10 +44,11 @@ const Register = () => {
     };
 
     return (
-        <div>
+        <div style={{ 
+          backgroundImage: `url("http://www.questarai.com/wp-content/uploads/2016/10/fullwidth-header-background-image-1080x720.png")`}}>
         <Header />
-        <div className ="container mt-5">
-        <h1 className="container mt-5">Register Account</h1>
+        <div className ="col-md-4 shadow p-3 card container mt-3">
+        <h1 className="container mt-4">Register Account</h1>
         <p className="form-label mt-4">Nama Lengkap</p>
       <input
         className="form-control"
