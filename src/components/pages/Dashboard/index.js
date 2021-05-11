@@ -32,19 +32,24 @@ const Dashboard = () => {
 	},[]);
 	return (
 		<div>
-			<div>
+			<div style={{ minHeight:'100vh',width:'100%',
+			backgroundImage: `url("http://www.questarai.com/wp-content/uploads/2016/10/fullwidth-header-background-image-1080x720.png")`}}>
 				<Header />
 				<NavBar />
-				<h2>Test</h2>
 				<div className="row">
 				{
 				product.map(item => (
-						<div className="card shadow-md col-md-4 mb-2 ml-auto" key={item.id}>
-						<p>{item.title}</p>
-						<p>{item.genre}</p>
-						<p>{item.description}</p>
+						<div style={{borderColor: 'black', borderWidth:1}}className="card shadow-sm col-md-4 mb-2 mt-2" key={item.id}>
+						<div>
+						<Link to={`/info/${item.id}`}><img  src={item.gambar} className="card-img-top"style={{height:300, width:'100%'}} alt="..." /></Link>
+						</div>
+						<br></br>
+						<hr></hr>
+						<p className="fs-4">Title : <span className="fs-5">{item.title}</span></p>
+						<hr></hr>
+						<p className="fs-4">Genre : <span className="fs-5">{item.genre}</span></p>
+						{/* <p>{item.description}</p> */}
 						{/* <img src={item.gambar} alt="..."></img> */}
-						<Link to={`/info/${item.id}`}><img src={item.gambar} className="card-img-top" alt="..." /></Link>
 						</div>
 				))
 				}
