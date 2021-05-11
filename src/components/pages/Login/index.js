@@ -33,7 +33,7 @@ const Login = ({ title, angka }) => {
 
   return (
     //JSX
-    <div style={{ 
+    <div style={{ minHeight:'100vh',
       backgroundImage: `url("http://www.questarai.com/wp-content/uploads/2016/10/fullwidth-header-background-image-1080x720.png")`}}>
     <Header />
     <div  className="col-md-4 shadow p-3 card container mt-5">

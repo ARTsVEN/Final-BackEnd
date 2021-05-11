@@ -91,7 +91,7 @@ const Input = () => {
 		
         <div>
         
-        <div style={{ 
+        <div style={{minHeight:'100vh',
       backgroundImage: `url("http://www.questarai.com/wp-content/uploads/2016/10/fullwidth-header-background-image-1080x720.png")`}}className="container mt-5">
             <h2>Input Data</h2>
             <div className="col-6">
